@@ -98,7 +98,8 @@ public class REI_Assessment {
 
         }
 
-        // 3. I created private access-modifier to store for loop which loops letters and count.
+
+        // 3. I created private access-modifier to store for loop which loops letters and count. (alt + command + m)
     private static Map<Character, Integer> getCharacterCountMap(String letters) {
         Map<Character, Integer> lettersCountMap = new HashMap<Character, Integer>();
         // map a Character to an Integer
