@@ -44,6 +44,22 @@ public class REI_Assessment {
             WebDriverManager.chromedriver().setup();
             WebDriver driver = new ChromeDriver();
             driver.get("http://google.com");
+
+          locators:
+          ID:
+           WebElement element = driver.findElement(By.id("disappearing_button"));
+
+           Xpath:
+           WebElement link = driver.findElement(By.xpath("//*[contains(text(), ‘tek Sch’)]")); // 8
+        // tek Sch -> although it is not complete sentence, we can find the
+        //  text.
+
+            Name:
+           WebElement fullName = driver.findElement(By.name("full_name"));
+            fullName.sendKeys("John Doe");
+
+            WebElement email = driver.findElement(By.name("email"));
+            email.sendKeys("johndoe@cybertekschool.com");
         }
          */
 
