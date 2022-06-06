@@ -38,6 +38,15 @@ public class REI_Assessment {
         // use BufferReader to read the file of English word list
         // I added "IOException" to avoid error
 
+        /*
+        If you use webpage instead of file:
+         public static void main(String[] args) {
+            WebDriverManager.chromedriver().setup();
+            WebDriver driver = new ChromeDriver();
+            driver.get("http://google.com");
+        }
+         */
+
         for (String currentWord = reader.readLine(); currentWord != null; currentWord = reader.readLine()) {
             // it reads the very first line of code and put it into "currentWord" variable.
             // currentWord is not equal to null -> if a line in currentWord turns out to null, then it is not a line anymore.
